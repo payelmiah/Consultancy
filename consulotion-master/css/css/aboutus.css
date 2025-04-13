@@ -1,0 +1,105 @@
+/* Basic Styling */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  .about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .about-us-section {
+    flex: 1 1 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-us-section img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .about-us-description {
+    color: #555;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .about-us {
+      flex-direction: column;
+    }
+    .about-us-section {
+      flex: 1 1 100%;
+    }
+  }
+
+  /* New section styling for "What We Do" */
+.what-we-do-section {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .what-we-do-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .what-we-do-section .about-us-description {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .what-we-do-section p {
+    padding-bottom: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .what-we-do-section {
+      padding: 20px;
+    }
+  
+    .what-we-do-section h2 {
+      font-size: 1.5em;
+    }
+  
+    .what-we-do-section .about-us-description {
+      font-size: 1em;
+    }
+  }
+  
